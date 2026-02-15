@@ -1,0 +1,95 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #0d1117;
+  color: white;
+  margin: 0;
+  padding: 20px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 28px;
+  margin-bottom: 30px;
+  font-weight: bold;
+
+  /* Gradient Text */
+  background: linear-gradient(90deg, #39d353, #26a641, #0e4429);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#months-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 20px;
+}
+
+/* Month Card */
+.month-card {
+  background: #161b22;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+/* Month Title */
+.month-title {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+/* Calendar Grid */
+.days-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 5px;
+  margin-bottom: 10px;
+}
+
+/* Day Box */
+.day {
+  background: #0e1117;
+  padding: 8px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.day:hover {
+  background: #30363d;
+}
+
+/* Activity Colors */
+.l1 { background: #0e4429; }
+.l2 { background: #006d32; }
+.l3 { background: #26a641; }
+
+/* Summary */
+.summary {
+  font-size: 12px;
+  margin-top: 8px;
+  text-align: left;
+}
+
+/* Popup */
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #161b22;
+  padding: 20px;
+  border-radius: 10px;
+  width: 250px;
+}
+
+.hidden {
+  display: none;
+}
+
+button {
+  padding: 6px 10px;
+  margin: 5px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
